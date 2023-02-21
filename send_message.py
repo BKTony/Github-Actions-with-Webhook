@@ -13,4 +13,4 @@ def send_message(message):
     print(r.text)
 
 if __name__ == '__main__':
-    send_message('Hello from GitHub Actions!')
+    send_message('今日已收盘!')
