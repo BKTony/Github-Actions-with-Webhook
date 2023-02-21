@@ -26,7 +26,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.8
+          python-version: 3.9
         
         
       - name: Install requests
@@ -42,7 +42,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Send Message
-        run: python send_message.py
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: python send_message.py
 
