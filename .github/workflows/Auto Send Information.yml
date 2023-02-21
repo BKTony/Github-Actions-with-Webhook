@@ -31,10 +31,3 @@ jobs:
         run: |
           python send_webhook.py ${{ secrets.WEBHOOK_URL }}
 
-      # Runs a set of commands using the runners shell
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-        
-      - name: Run Python script
-        run: python path/to/your/script.py # 指定你的 Python 脚本路径
-
