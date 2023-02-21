@@ -29,8 +29,9 @@ jobs:
           python-version: 3.8
         
       - name: Install Dependencies
-        run: pip install -r requirements.txt
-        
+        run: pip install --upgrade pip
+        # run: pip install -r requirements.txt
+
       # Runs a single command using the runners shell
       - name: Send Message
         run: python send_message.py
