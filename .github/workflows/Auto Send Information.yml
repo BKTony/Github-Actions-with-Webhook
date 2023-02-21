@@ -31,8 +31,8 @@ jobs:
       - name: Install Dependencies
         run: pip install --upgrade pip
         
-      - name: Install Requirements
-        run: pip install -r requirements.txt
+      # - name: Install Requirements
+      #   run: pip install -r requirements.txt
 
       # Runs a single command using the runners shell
       - name: Send Message
