@@ -42,7 +42,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Send Message
-        run: python send_message.py
+        run: python send_message1.py
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
 
