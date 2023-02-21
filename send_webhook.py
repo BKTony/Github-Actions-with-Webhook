@@ -1,7 +1,7 @@
 import requests
-import sys
+import os
 
-url = sys.argv[1]  # 从命令行参数中获取 Webhook URL
+webhook_url = os.environ['WEBHOOK_URL']  # 从命令行参数中获取 Webhook URL
 
 payload = {
     "text": "今天已收盘!"
