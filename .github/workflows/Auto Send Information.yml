@@ -6,9 +6,9 @@ name: Auto send Info
 on:
   # Triggers the workflow at 15:30 Everyday
   schedule:
-    - cron: '55 06 * * *' # 每天UTC时间的15:00执行脚本
+    - cron: '00 07 * * *' # 每天UTC时间的15:00执行脚本
 
-  workflow_dispatch:
+  # workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -42,7 +42,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Send Message
-        run: python send_message1.py
+        run: python send_message.py
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
 
