@@ -1,7 +1,7 @@
 import requests
 import os
 
-webhook_url = os.environ['WEBHOOK_URL']  # 从命令行参数中获取 Webhook URL
+url = os.environ['WEBHOOK_URL']  # 从命令行参数中获取 Webhook URL
 
 payload = {
     "text": "今天已收盘!"
