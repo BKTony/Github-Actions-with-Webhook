@@ -6,7 +6,7 @@ name: Auto send Info
 on:
   # Triggers the workflow at 15:30 Everyday
   schedule:
-    - cron: '41 07 * * *' # 每天UTC时间的15:00执行脚本
+    - cron: '43 07 * * *' # 每天UTC时间的15:00执行脚本
 
   workflow_dispatch:
 
